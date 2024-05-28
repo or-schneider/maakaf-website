@@ -13,7 +13,7 @@
     "format": "npx prettier --write . --config ./.prettierrc",
     "prepare": "husky install && playwright install",
     "test:ui": "npx playwright test --ui",
-    "test": "npx playwright test",
+    "test": "playwright test",
     "prepush": "npm run test",
     "test-result": "npx playwright show-report",
     "precommit": "lint-staged && npm run lint",
