@@ -11,7 +11,7 @@
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
     "format": "npx prettier --write . --config ./.prettierrc",
-    "prepare": "husky install",
+    "prepare": "husky install && playwright install",
     "test:ui": "npx playwright test --ui",
     "test": "npx playwright test",
     "prepush": "npm run test",
